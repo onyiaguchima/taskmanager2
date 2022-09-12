@@ -10,7 +10,7 @@ MongoClient.connect(connectionurl, {useNewUrlParser: true}, (error, client)=>{
 
     const db = client.db(databasename);
     // db.collection("users").insertOne({
-    //     name: "chima",
+    //     name: "",
     //     age: 39,
     //     nationality: "Nigerian"
     // }, (error, result)=>{
