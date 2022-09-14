@@ -48,16 +48,6 @@ me.save().then((me)=>{
     console.log(me);
 });
 
-// const us = new Task(
-//     {
-//         name: "chladimir",
-//         age: 109,
-//         description: "software developer"
-//     }
-// );
-// us.save().then((result)=>{
-//     console.log(result)
-// })
 
 
 
