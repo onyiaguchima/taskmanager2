@@ -13,13 +13,17 @@ MongoClient.connect(connectionurl, {useNewUrlParser: true}, (error, client)=>{
 
     const db = client.db(databasename);
 
-    db.collection("users").findOne({name: "niya"}, (error, user)=>{
-        if(error){
-            return console.log("an error was encountered")
-        }
+    // db.collection("users").findOne({name: "chima"}, (error, user)=>{
+    //     if(error){
+    //         return console.log("an error was encountered")
+    //     }
 
-        console.log(user);
-    })
+    //     console.log(user);
+    // });
+
+    db.collection("players").find({}).toArray((error, response)=>{
+        console.log(response)
+    });
 
     // db.collection("users").insertOne({
     //     _id: id,
